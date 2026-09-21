@@ -1,0 +1,23 @@
+[package]
+name = "binsize"
+version = "0.1.0"
+edition = "2021"
+description = "Diffs section and symbol sizes between two ELF binaries, to see exactly what made a release grow"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/binsize"
+readme = "README.md"
+keywords = ["elf", "binary-size", "symbols", "cli", "build-tools"]
+categories = ["command-line-utilities"]
+
+[lib]
+name = "binsize"
+path = "src/lib.rs"
+
+[[bin]]
+name = "binsize"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
