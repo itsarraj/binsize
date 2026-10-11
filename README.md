@@ -4,6 +4,12 @@ Diffs section and symbol sizes between two ELF binaries — two releases
 of the same executable — so "the binary grew by 4KB" turns into "which
 section, which function."
 
+## Installation
+
+```sh
+cargo install --path .
+```
+
 ## Usage
 
 ```bash
